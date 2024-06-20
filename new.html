@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+function watch()
+{
+	document.getElementById("watch").innerHTML=" Welcome to Browser"
+}
+</script>
+<style>
+body { background-color: skyblue;
+background: url(off.jpg) no-repeat center fixed; 
+  background-size: cover;
+border-color: white; 
+border-radius: 5px;
+border-style: dashed;}
+h1, h2{text-align: center;}
+h1 {color:red;
+font-family:Arial; 
+font-size:40;
+}
+
+h2 {color:orange; 
+font-size:17;
+border: 1px solid white;
+margin: 50px 100px;}
+h3{color:white;}
+h4{color:white;}
+</style>
+</head>
+<body>
+<h1>Welcome to my first web page</h1>
+
+<h2> HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.</h2>
+<img id="image" src="red.png"width="290"height="174"><p></p>
+<button type ="button" onclick=document.getElementById("image").src="dev.jpg">DEV</BUTTON>
+<button type ="button" onclick=document.getElementById("image").src="jeevan.jpg">JEEVAN</BUTTON>
+<h3 id ="watch">To see magic Click here</h3>
+
+<button type="button" onclick="watch()">clickme</button>
+<h4>How's that:)</h4>
+<img src="workplace.jpg" alt="workplace" usemap="#workmap" width="400"height="380">
+<map name="workmap">
+<area shape="rect" coords=" 34,44,270,350" alt="computer" href="computer.html">
+</body>
+</html>
+
