@@ -1,28 +1,79 @@
 <html>
 <head>
-<style>
-body{background-color: skyblue;}
+<style> 
 
+.button {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px lightblue;
+  padding: 1px;
+  text-align: center;
+}
 
 h3{ text-align: center;}
 
+body{
+background-image: url("log.jpg");
+background-size: cover;}
 
 </style>
 </head>
-	
+
 <body>
 
-<h3>UserName= <input type="text" id="nameInput" placeholder="Enter a name"></h3><br><br>
-<h3>Password= <input type="text" id="password" placeholder = "Enter password"></h3><br><br>
-
-<h3><button onclick="Login()">Login</button></h3>
+<div class="center">
+<h3>UserName <input type="text" id="nameInput" placeholder="Enter a name"></h3><br><br>
+<h3>Password <input type="text" id="password" placeholder = "Enter password"></h3><br><br>
+<div class ="button"
+<h3><button onclick="button()"><span>Login</button></span></h3>
+</div>
 <p id="result"></p>
 
+</div>
 
 <script>
 
-
-function Login(){
+function button(){
 	
 	var input = document.getElementById("nameInput").value;
 	var b = document.getElementById("password").value;
@@ -32,7 +83,7 @@ function Login(){
 	    window.location.href= "new.html";
 	}
 	else{
-	  result.textContent="Incorrect Username or Password Please Try again";
+	  result.textContent= "incorrecr UserName or password Please Try again" ;
 	}
 }
 </script>
