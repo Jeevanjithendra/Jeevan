@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Jeevan</title>
+<script>
+function watch()
+{
+	document.getElementById("watch").innerHTML=" Welcome to Browser"
+}
+</script>
+
+<style>
+body { background-color: skyblue;
+background: url(off.jpg) no-repeat center fixed; 
+  background-size: cover;
+border-color: orange; 
+border-radius: 5px;
+border-style: dashed;}
+h1, h2{text-align: center;}
+h1 {color:red;
+font-family:Algerian; 
+font-size:40;
+}
+
+h2 {color:orange; 
+font-size:17;
+border: 1px solid white;
+margin: 50px 100px;}
+h3{color:black;}
+h4{color:black;}
+</style>
+</head>
+<body>
+
+<h1><i>Welcome to my first web page</i></h1>
+
+<h2> HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.</h2>
+Enter name:<input type=text id="name"><br><br>
+<img id="image" src="color.png"width="290"height="174"><p></p>
+<button type ="button" onclick=document.getElementById("image").src="dev.jpg">DEV</BUTTON>
+<button type ="button" onclick=document.getElementById("image").src="jeevan.jpg">JEEVAN</BUTTON>
+<h3 id ="watch">To see magic Click here</h3>
+
+<button type="button" onclick="watch()">clickme</button>
+<h4>How's that:)</h4>
+<img src="workplace.jpg" alt="workplace" usemap="#workmap" width="400"height="380">
+<map name="workmap">
+<area shape="rect" coords=" 34,44,270,350" alt="computer" href="computer.html">
+<area shape="rect" coords=" 290,172,333,250" alt="phone" href="phone.html">
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+
+
+ 
+</body>
+</html>
+
