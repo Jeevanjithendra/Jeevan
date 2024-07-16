@@ -9,12 +9,13 @@ h3{ text-align: center;}
 
 </style>
 </head>
+	
 <body>
 
 <h3>UserName= <input type="text" id="nameInput" placeholder="Enter a name"></h3><br><br>
 <h3>Password= <input type="text" id="password" placeholder = "Enter password"></h3><br><br>
 
-<button onclick="Login()">Login</button>
+<h3><button onclick="Login()">Login</button></h3>
 <p id="result"></p>
 
 
@@ -31,7 +32,7 @@ function Login(){
 	    window.location.href= "new.html";
 	}
 	else{
-	  window.location.href=" phone.html ";
+	  result.textContent="Incorrect Username or Password Please Try again";
 	}
 }
 </script>
